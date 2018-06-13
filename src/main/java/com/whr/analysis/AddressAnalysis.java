@@ -14,25 +14,14 @@ public class AddressAnalysis {
     public static final String SUCCESS="1";
     public static final String FAIL="0";
     //电话号码正则
-//    private static  String TEL_REG = "1[358]\\d{9}";
     private static  String TEL_REG = "1\\d{10}";
-    //    private static  String TEL_REG = "((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}";
     //身份证正则
-//    private static  String ID_REG = "^[1-9]\\d{5}[1-9]\\d{3}((0\\d)|(1[0-2]))(([0|1|2]\\d)|3[0-1])\\d{3}([0-9]|X)$";
     private static String   ID_REG="[1-9]\\d{5}(18|19|([23]\\d))\\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\\d{3}[0-9Xx]";
 
-    //    private static String telValue = "13500001111";
-//    private static String idValue = "430502199505242568";
     public static void main(String[] args) {
-        //    private static String testValue="我是@@13500001111@@阿阿斯   430502198705242050";
-        //    private static String testValue=" 吴浩然13510639646深圳市南山区西丽大道430502198705242568 ";
-        //    private static String testValue=" 吴浩然430502198705242568深圳市南山区西丽大道13510639646";
-//        String testValue=" 胡鹏飞广东省深圳市南山区大学城13823583932 42112619890911441x";
         String testValue="13823583931湖北省黄冈市蕲春县刘河镇凉亭村八大胡同3栋88号李永春42112619890123441x";
         System.out.println(testValue);
-//        String testValue = "深圳市南山区西丽大道304 上官飞鸿13510631234 430505195605241234";
         AnalysisInfoVo ret = split(testValue);
-//        splitWithoutFormat(testValue,ret);
         System.out.println(ret);
     }
 

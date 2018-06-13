@@ -12,7 +12,6 @@ public class AnalysisInfoVo {
     private String name;
     private String idcn;
 
-
     public String getIdcn() {
         return idcn;
     }
